@@ -1,9 +1,9 @@
-
+#Which tools should Python use to package/build this project ”
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
-
+#This is the current version of the application. As we make releases, we can change it to other version. 
 [project]
 name = "abc-sales"
 version = "0.1.0"
@@ -11,12 +11,13 @@ description = "Databricks PySpark medallion pipeline"
 requires-python = ">=3.10"
 dependencies = []
 
+#This is basically your developer tool list.
 [project.optional-dependencies]
 dev = [
     "pyspark>=3.5,<4",
     "pytest>=8",
 ]
-
+#This creates a shortcut command for running your application
 [project.scripts]
 abc-sales-run = "abc_sales.main:main"
 
