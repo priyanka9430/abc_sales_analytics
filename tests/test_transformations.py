@@ -4,7 +4,7 @@ from datetime import datetime
 # imports the transformation functions we want to test.
 from abc_sales.transformations import ( to_gold_customer, to_gold_sales, to_silver)
 
-
+#create small dummy bronze dataFrame with few sample records 
 def create_bronze_test_df(spark):
 
 
